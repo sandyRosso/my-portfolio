@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Rosso - Web Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #003B71;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            margin-right: 20px;
+        }
+
+        .header {
+            position: relative;
+            height: 100vh;
+            background-image: url('vet2.jpg'); /* Your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .profile-img {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    border: 1px solid black; /* Optional: Adds a border */
+    margin-bottom: 20px; /* Adds space between the image and the text */
+    object-fit: cover; /* Ensures the image is scaled correctly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for a polished look */
+}
+
+
+        .header-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .header-btn {
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .header-btn:hover {
+            background-color: #28a745;
+            transform: scale(1.05);
+        }
+
+        #about, #portfolio, #contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #portfolio img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #portfolio a {
+    text-decoration: none; /* Removes underline */
+}
+
+#portfolio a:hover img {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            font-size: 2rem;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #28a745;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sandy Rosso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-overlay">
+            <img src="images/vet2.jpg" alt="Sandy Rosso" class="profile-img">
+            <h1>Sandy Rosso</h1>
+            <p>Web Developer | Turning Ideas into Beautiful Websites</p>
+            <a href="#portfolio" class="btn btn-light btn-lg header-btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Sandy Rosso, a passionate web developer with a knack for creating intuitive and visually appealing websites.
+            I specialize in crafting responsive designs and seamless user experiences using modern web technologies.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://sandyrosso.github.io/vet-project/index.html" target="_blank">
+                    <img src="images/project.jpg" alt="Project 1" class="img-fluid mb-4">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://sandyrosso.github.io/vet-project/index.html" target="_blank">
+                    <img src="images/project.jpg" alt="Project 2" class="img-fluid mb-4">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://sandyrosso.github.io/vet-project/index.html" target="_blank">
+                    <img src="images/project.jpg" alt="Project 3" class="img-fluid mb-4">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or connect with me on social media!</p>
+        <p>Email: <a href="mailto:sandyrossotejada@gmail.com">sandyrossotejada@gmail.com</a></p>
+        <p>Phone: (809) 602-6050</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/sandyrosso" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/sandyrosso" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/sandyrosso" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
